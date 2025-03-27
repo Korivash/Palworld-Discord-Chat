@@ -1,41 +1,36 @@
-# Palworld Discord to Chat Messenger
-This is a simple Python script that listens to a specific Discord channel and sends messages from that channel to a Palworld server's chat using RCON.
+  ## Palworld Discord to Chat Messenger</summary>
+  
+  ## Overview
 
-Requirements
-Python 3.x
+  This is a simple Python script that listens to a specific Discord channel and sends messages from that channel to a Palworld server's chat using RCON.
 
-Libraries:
+  ## Requirements
 
-discord.py
+  - Python 3.x
+  - Libraries:
+    - `discord.py`
+    - `python-dotenv`
+    - `mcrcon`
+  
+  You can install the required libraries by running:
 
-python-dotenv
-
-mcrcon
-
-You can install the required libraries by running:
-
-bash
-Copy
-Edit
-pip install discord.py python-dotenv mcrcon
+  ```bash
+  pip install discord.py python-dotenv mcrcon
 Setup
-Clone the repository:
-
+1. Clone the Repository
 bash
 Copy
 Edit
 git clone <your-repo-url>
 cd <your-repo-directory>
-Create the .env file:
-
+2. Create the .env File
 Copy the .env_example file to a new file named .env:
 
 bash
 Copy
 Edit
 cp .env_example .env
-Configure the .env file:
-
+3. Configure the .env File
 Open the .env file and add the required values:
 
 ini
@@ -75,7 +70,7 @@ Edit
 python bot.py
 The bot will log in, listen for messages from the specified Discord channel, and send them to the Palworld server.
 
-Example .env File
+# Example .env File
 ini
 Copy
 Edit
